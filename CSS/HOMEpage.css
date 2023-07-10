@@ -1,0 +1,158 @@
+body{
+  background: url("image/3.jpg");
+   background-size: auto;
+}
+h1{
+	text-align: center;
+}
+.nav-link {
+	box-shadow: black;
+}
+
+.zagolovok {
+	font-size: 50px;
+	color: #000;
+	padding-left: 10px;
+	font-family: "Roboto Light";
+}
+
+.zagolovok span {
+	display: inline;
+	background-color: rgba(0, 0, 0, 0.7);
+	box-shadow: -10px 0 0 rgba(0, 0, 0, 0.7), 10px 0 0 rgba(0, 0, 0, 0.7);
+	padding: 0 10px 0 0;
+	color: #4f898d;
+	line-height: 14px;
+	font-size: 45px;
+}
+
+.pod{
+
+	font-size: 20px ;
+	color: #4f898d;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.view{
+	margin: 10px;
+	float: left;
+	cursor: default;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	 border: 1px solid rgba(79,137, 141,0.7);  box-shadow: 0 14px 28px rgba(79,137, 141,0.7), 0 3px 6px rgba(79,137, 141,0.7)
+
+}
+
+.view .mask{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+
+.view img{
+	display: block;
+	position: relative;
+}
+
+.view h2{
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	position: relative;
+	font-size: 17px;
+	margin: 20px 0 0 0;
+}
+
+.view p{
+	font-style: italic;
+	font-size: 14px;
+	position: relative;
+	color: white;
+	padding: 0 20px 0;
+	text-align: center;
+}
+
+.view a.info{
+	display: inline-block;
+	text-decoration: none;
+	padding: 7px 10px;
+	background: rgba(79,137, 141) ;
+	color: white;
+	font-size: 10px;
+	text-transform: uppercase;
+	box-shadow: 0 0 1px black;
+}
+
+.view a.info:hover{
+	box-shadow: 0 0 5px black;
+}
+
+.view-first img{
+	transition: all 0.2s linear;
+	width: 200px;
+	height: 200px;
+}
+
+.view-first .mask{
+	opacity: 0;
+	background-color: rgba(79,137, 141,0.7);
+	transition: all 0.4s ease-in-out;
+}
+
+.view-first h2 {
+	transform: translateY(-100px);
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+.view-first p{
+	transform: translateY(100px);
+	opacity: 0;
+	transition: all 0.2s linear;
+}
+
+.view-first a.info{
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+.view-first:hover img{
+	transform:  scale(1.1);
+}
+
+.view-first:hover .mask{
+	opacity: 1;
+}
+
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.view-first:hover p {
+	transition-delay: 0.1s;
+}
+
+.view-first:hover a.info{
+	transition-delay: 0.2s;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 225px);
+  width: 100%;
+  max-width: 1000px;
+  justify-content: center;
+  justify-items: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin: 0 auto;
+}
+
+
